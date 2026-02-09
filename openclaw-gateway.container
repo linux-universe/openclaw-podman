@@ -1,0 +1,16 @@
+[Container]
+Image=openclaw.build
+Environment=HOME=/home/node
+Environment=TERM=xterm-256color
+Volume=<data-path>/config:/home/node/.openclaw:z
+Volume=<data-path>/workspace:/home/node/.openclaw/workspace:z
+PublishPort=18789:18789
+PublishPort=18790:18790
+RunInit=true
+Exec=node dist/index.js gateway --bind lan --port 18789
+
+[Service]
+TimeoutStartSec=900
+
+[Install]
+WantedBy=default.target
