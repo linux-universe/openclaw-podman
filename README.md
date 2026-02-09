@@ -4,7 +4,7 @@
 > work in progress
 
 ##
-1. clone https://github.com/openclaw/openclaw.git to <data-path> and run `systemctl start openclaw-build.service`.
+1. clone https://github.com/openclaw/openclaw.git to `<data-path>/git` and run `systemctl start openclaw-build.service`.
 2. run onboarding command as documented below. (`podman run --rm .... onboard`)
 3. systemctl start openclaw-gateway.service
 
