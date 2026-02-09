@@ -1,3 +1,4 @@
 [Build]
 ImageTag=openclaw
 SetWorkingDirectory=<data-path>/git
+#Environment=OPENCLAW_DOCKER_APT_PACKAGES="git curl jq"
