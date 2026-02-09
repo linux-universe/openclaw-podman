@@ -1,0 +1,3 @@
+[Build]
+ImageTag=openclaw
+SetWorkingDirectory=<data-path>/git
