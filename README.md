@@ -12,5 +12,5 @@
 ## run cli commands
 
 ```console
-$ podman run --rm -e HOME=/home/node -e TERM=xterm-256color -e BROWSER=echo -v <data-path>/config:/home/node/.openclaw:z -v <data-path>/workspace:/home/node/.openclaw/workspace:z -it --init localhost/openclaw node dist/index.js <command>
+$ podman run --rm --network container:systemd-openclaw-gateway -e HOME=/home/node -e TERM=xterm-256color -e BROWSER=echo -v <data-path>/config:/home/node/.openclaw:z -v <data-path>/workspace:/home/node/.openclaw/workspace:z -it --init localhost/openclaw node dist/index.js <command>
 ```
